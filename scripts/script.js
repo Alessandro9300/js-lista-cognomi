@@ -32,9 +32,11 @@ var pos = listaCognomi.indexOf(promptUtente);
 
 console.log(pos);
 
-// gli dico di stampare la lista
+// gli dico di stampare la lista (sostituito while con for per provare tutte e due i cicli)
 
-for (var i = 0; i < listaCognomi.length; i++){
+var i = 0;
+
+while (i < listaCognomi.length){
 
   // creo variabile che cicla gli output
 
@@ -52,6 +54,7 @@ for (var i = 0; i < listaCognomi.length; i++){
 
   document.getElementById('id').innerHTML = returnHTML + " " + outputId;
 
+  i++;
 }
 
-document.getElementById('id-2').innerHTML = "Utente, il tuo cognome è il numero " + (pos + 1) + " in ordine alfabetico in una lista di " + listaCognomi.length + " cognomi";
+document.getElementById('id-2').innerHTML = "Sign. " + promptUtente + ", il suo cognome è il numero " + (pos + 1) + " in ordine alfabetico in una lista di " + listaCognomi.length + " cognomi";
